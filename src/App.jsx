@@ -3,7 +3,7 @@ import "./App.css";
 import { Route, Routes, Link } from "react-router-dom";
 
 // import Header from "./components/Header";
-import Card from "./components/Card";
+import Cards from "./components/Cards";
 import Events from "./components/Events";
 import State1 from "./components/useState";
 import TextInputWithFocusButton from "./components/useRef";
@@ -38,7 +38,7 @@ function App() {
         <Route
           path="/cards"
           element={
-            <Card h2={"Hello, This is an H2"} h3={"Hello, This is an H3"} />
+            <Cards num={5} />
           }
         />
         <Route path="/events" element={<Events />} />

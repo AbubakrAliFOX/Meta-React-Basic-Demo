@@ -1,12 +1,16 @@
-import './index.css'
+// import './index.css'
+import Card from '../Card';
 
-const Card = ({ h2, h3 }) => {
+const Cards = ({num = 1}) => {
+  const cards = [];
+  for (let i = 0; i < num; i++) {
+    cards.push(<Card/>)
+ }
   return (
-    <div className="card">
-      <h2>{h2}</h2>
-      <h3>{h3}</h3>
+    <div className="cards">
+      {cards}
     </div>
   );
 };
 
-export default Card;
+export default Cards;
