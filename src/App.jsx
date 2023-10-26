@@ -26,9 +26,9 @@ function App() {
       <Card h2={"Hello, This is an H2"} h3={"Hello, This is an H3"} />
       <Card h2={"Hello, This is an H2"} h3={"Hello, This is an H3"} /> */}
 
-      {/* <Events /> */}
-      {/* <State1 /> */}
-      {/* <TextInputWithFocusButton /> */}
+      <Events />
+      <State1 />
+      <TextInputWithFocusButton />
 
       <div className="App">
         <h1>Where should the state go?</h1>
