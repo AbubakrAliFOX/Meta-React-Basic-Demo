@@ -9,6 +9,7 @@ import State1 from "./components/useState";
 import TextInputWithFocusButton from "./components/useRef";
 // import Fruits from "./components/LiftigState/Fruits";
 // import FruitsCounter from "./components/LiftigState/FruitsCounter";
+import logo from './assets/logo.png'
 
 function App() {
   return (
@@ -32,6 +33,9 @@ function App() {
         <Link to="/ref" className="nav-item">
           Ref
         </Link>
+        <Link to="/image" className="nav-item">
+          Image
+        </Link>
       </nav>
 
       <Routes>
@@ -44,6 +48,7 @@ function App() {
         <Route path="/events" element={<Events />} />
         <Route path="/state1" element={<State1 />} />
         <Route path="/ref" element={<TextInputWithFocusButton />} />
+        <Route path="/image" element={<img width={500} src={logo} />} />
       </Routes>
     </>
   );
