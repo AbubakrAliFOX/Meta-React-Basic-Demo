@@ -10,6 +10,7 @@ import TextInputWithFocusButton from "./components/useRef";
 // import Fruits from "./components/LiftigState/Fruits";
 // import FruitsCounter from "./components/LiftigState/FruitsCounter";
 import logo from './assets/logo.png'
+import MyVideo from './components/Videos'
 
 function App() {
   return (
@@ -36,6 +37,9 @@ function App() {
         <Link to="/image" className="nav-item">
           Image
         </Link>
+        <Link to="/video" className="nav-item">
+          Video
+        </Link>
       </nav>
 
       <Routes>
@@ -49,6 +53,7 @@ function App() {
         <Route path="/state1" element={<State1 />} />
         <Route path="/ref" element={<TextInputWithFocusButton />} />
         <Route path="/image" element={<img width={500} src={logo} />} />
+        <Route path="/video" element={<MyVideo controls={true} />} />
       </Routes>
     </>
   );
